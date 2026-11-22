@@ -1,0 +1,107 @@
+/* Virtual Physics Laboratory — Laboratory Workspace Layout */
+.lab-header {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.lab-brand h1 { color: #ffffff; font-size: 1.25rem; margin-bottom: 0.1rem; }
+.lab-brand p { color: #94a3b8; font-size: 0.82rem; margin: 0; }
+
+.lab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.nav-tab {
+  background: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  padding: 0.45rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav-tab.active, .nav-tab:hover {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.lab-container {
+  max-width: 1360px;
+  margin: 1.25rem auto;
+  padding: 0 1rem;
+}
+
+.workspace-grid {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.exp-sidebar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+}
+
+.exp-list-item {
+  width: 100%;
+  text-align: left;
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: var(--surface-alt);
+  cursor: pointer;
+  display: block;
+}
+.exp-list-item:hover { border-color: var(--primary); }
+.exp-list-item.active {
+  background: #eff6ff;
+  border-color: var(--primary);
+}
+.exp-list-item .exp-num { font-size: 0.72rem; font-weight: 700; color: var(--primary); }
+.exp-list-item .exp-name { font-size: 0.85rem; font-weight: 600; color: var(--text); display: block; }
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formula-box {
+  background: #f8fafc;
+  border-left: 4px solid var(--primary);
+  padding: 0.65rem 0.9rem;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.workflow-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.9rem;
+}
+.workflow-step {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  background: #e2e8f0;
+  color: #334155;
+  font-weight: 600;
+}
+.workflow-step.active { background: #1d4ed8; color: #fff; }

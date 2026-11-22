@@ -1,0 +1,105 @@
+/* Virtual Physics Laboratory — Simulator, Instruments & Tables */
+.instrument-svg {
+  width: 100%;
+  max-height: 360px;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #f8fafc;
+}
+
+.sim-canvas {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #ffffff;
+  display: block;
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.control-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.control-group input[type="range"] { width: 100%; }
+.control-group input[type="number"],
+.control-group select {
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 0.88rem;
+}
+
+.readout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 0.6rem;
+  margin: 0.75rem 0;
+}
+
+.readout-tile {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.55rem 0.7rem;
+}
+.readout-tile .label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.03em; }
+.readout-tile .value { font-size: 1.05rem; font-weight: 700; font-family: monospace; color: var(--text); }
+
+.calc-steps {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.85rem;
+  font-size: 0.88rem;
+}
+.calc-steps div { margin-bottom: 0.35rem; }
+.calc-steps .calc-final { font-weight: 700; color: var(--primary); font-size: 0.95rem; }
+
+.table-scroll { overflow-x: auto; }
+.obs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+}
+.obs-table th, .obs-table td {
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+}
+.obs-table th { background: #f1f5f9; font-weight: 700; }
+
+.quiz-question {
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 0;
+}
+.quiz-options { display: flex; flex-direction: column; gap: 0.35rem; margin: 0.4rem 0; }
+.quiz-option { display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; cursor: pointer; }
+.quiz-feedback { font-size: 0.84rem; margin-top: 0.35rem; font-weight: 600; }
+.quiz-feedback.correct { color: var(--success); }
+.quiz-feedback.incorrect { color: var(--danger); }
+.quiz-actions { display: flex; align-items: center; gap: 1rem; margin-top: 0.75rem; }
+.quiz-score-badge { font-weight: 700; color: var(--primary); }
+
+.stopwatch-display {
+  font-family: monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: #0f172a;
+  color: #38bdf8;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
