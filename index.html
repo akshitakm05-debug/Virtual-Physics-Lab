@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Physics Laboratory — Understand Physics Through Experimentation</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/laboratory.css" />
+  <link rel="stylesheet" href="css/simulator.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="lab-header">
+    <div class="lab-brand">
+      <h1>Virtual Physics Laboratory</h1>
+      <p>Understand Physics Through Experimentation</p>
+    </div>
+    <nav class="lab-nav" aria-label="Laboratory Navigation">
+      <button type="button" class="nav-tab active" data-view="experiments">Experiments (6)</button>
+      <button type="button" class="nav-tab" data-view="instruments">Virtual Instruments</button>
+      <button type="button" class="nav-tab" data-view="laser">Laser Physics Lab</button>
+      <button type="button" class="nav-tab" data-view="playground">Physics Playground</button>
+      <button type="button" class="nav-tab" data-view="progress">Lab Progress &amp; Data</button>
+    </nav>
+  </header>
+
+  <main class="lab-container" id="appRoot">
+    <noscript>JavaScript is required to run the Virtual Physics Laboratory simulations.</noscript>
+  </main>
+
+  <script src="js/calculation-engine.js"></script>
+  <script src="js/physics-engine.js"></script>
+  <script src="js/observation-manager.js"></script>
+  <script src="js/graph-engine.js"></script>
+  <script src="js/instrument-engine.js"></script>
+  <script src="js/laser-engine.js"></script>
+  <script src="js/experiment-manager.js"></script>
+  <script src="js/quiz-engine.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
